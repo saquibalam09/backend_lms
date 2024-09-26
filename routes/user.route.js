@@ -15,6 +15,8 @@ import upload from "../middlewares/multer.middleware.js";
 import { isLoggedIn } from "../middlewares/auth.middleware.js";
 const router = Router();
 
+// router.get("/", upload.single("avatar"), register);
+
 router.post("/register", upload.single("avatar"), register);
 router.get("/google", googleRegister);
 router.post("/login", login);

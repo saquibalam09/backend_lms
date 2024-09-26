@@ -10,7 +10,7 @@ import { oauth2Client } from "../utils/googleConfig.js";
 
 const cookieOptions = {
   maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
-  httpOnly: true,
+  httpOnly: false,
   secure: false,
 };
 
